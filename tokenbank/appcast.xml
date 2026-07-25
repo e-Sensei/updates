@@ -7,6 +7,14 @@
     <link>https://updates.e-sensei.nl/tokenbank/appcast.xml</link>
     <description>Updates for tokenbank (macOS).</description>
     <language>en</language>
+    <item>
+      <title>2026.07.25.a3f88b8</title>
+      <pubDate>Sat, 25 Jul 2026 00:21:29 +0000</pubDate>
+      <sparkle:version>20260725</sparkle:version>
+      <sparkle:shortVersionString>2026.07.25.a3f88b8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.07.25.a3f88b8/Tokenbank-2026.07.25.a3f88b8.dmg" sparkle:edSignature="4j3oMyvAyl1YSwFGYpbZ6d4/wz0oHCmhGL2I+bk/UkoXpd2pVFizcqMygfbnhkH5sUL9BNxNP6ZnzUWcpvDlBA==" length="28205601" type="application/octet-stream"/>
+    </item>
     <!-- Release items appended by the release flow: each has a DMG <enclosure>
          (e-Sensei/tokenbank Releases) + its Sparkle EdDSA signature. -->
   </channel>
