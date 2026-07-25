@@ -9,6 +9,15 @@
     <language>en</language>
     <item>
       <title>2026.07.25.a3f88b8</title>
+      <description><![CDATA[
+        <h3>Automatic updates are here</h3>
+        <p>First release with built-in updates &mdash; tokenbank now updates itself in place.</p>
+        <ul>
+          <li><b>New:</b> Automatic updates (Sparkle). Background checks and one-click install, cryptographically signed. Manual check in Settings &rarr; General &rarr; Check Now.</li>
+          <li><b>Fixed:</b> Settings window (General / Accounts / Log) no longer opens cramped or clipped, sizes correctly, and shows a proper title.</li>
+        </ul>
+        <p style="color:#888">Signed (Developer ID: Archaitect B.V.) and notarized. Requires macOS 14+ and Claude Code.</p>
+      ]]></description>
       <pubDate>Sat, 25 Jul 2026 00:21:29 +0000</pubDate>
       <sparkle:version>20260725</sparkle:version>
       <sparkle:shortVersionString>2026.07.25.a3f88b8</sparkle:shortVersionString>
