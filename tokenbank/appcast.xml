@@ -8,6 +8,30 @@
     <description>Updates for tokenbank (macOS).</description>
     <language>en</language>
     <item>
+      <title>2026.07.27.d8fb537</title>
+      <pubDate>Mon, 27 Jul 2026 18:55:21 +0000</pubDate>
+      <sparkle:version>20260727.205259</sparkle:version>
+      <sparkle:shortVersionString>2026.07.27.d8fb537</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h3>Account management + live menu bar + reliability fixes</h3>
+<ul>
+  <li><b>Switch accounts in Settings → Accounts</b> — per-account usage, Promote, rename/delete inline.</li>
+  <li><b>Menu-bar readout (opt-in)</b> — active account's usage % and/or a countdown to the next refresh.</li>
+  <li><b>"Re-login needed" + Re-link</b> — expired logins are flagged and re-captured from a fresh <code>claude login</code>, no duplicate.</li>
+  <li><b>Claude engine status</b> — Settings ▸ General shows the detected <code>claude</code> path + version (or why it won't run).</li>
+  <li><b>Token-billed accounts</b> read "No plan usage · token-billed"; extra-credits allowance now shows.</li>
+</ul>
+<p><b>Fixed — no more duplicated usage bars.</b> A running <code>claude</code> session holds the shared macOS login, so a background usage probe could report <i>its</i> numbers for other accounts (two accounts showing identical bars). tokenbank now detects a live session and <b>pauses</b> the background account polls — keeping last-known usage and showing “Paused · a Claude session is running” — instead of risking a wrong reading. The active account keeps refreshing, and normal polling resumes once no session is running.</p>
+<p><b>Fixed:</b> sessions no longer drop (the heartbeat never refreshes your active login); a dead-token account is marked "Re-login needed" instead of borrowing another's usage; account switching reliably keeps the freshest token; OAuth tokens are never logged.</p>
+<p><b>Fixed:</b> a false "app is behind the daemon" version-mismatch banner on fresh installs (thanks to <b>The Persian Prince</b> for the catch).</p>
+<p><b>Updates:</b> now checks hourly (was daily), and same-day releases are offered correctly.</p>
+<p><b>Diagnostics &amp; polish:</b> usage-poll failures log a clear reason instead of failing silently; usage rows align cleanly (fixed-width % and resets-in columns).</p>
+<p style="color:#888">Requires macOS 14+ and Claude Code.</p>
+      ]]></description>
+      <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.07.27.d8fb537/Tokenbank-2026.07.27.d8fb537.dmg" sparkle:edSignature="H02oAlX2ZgdUfxzJDTj5ILohh6bogy7+j0VXYaIuDkRBQgCVIEqbuh7foPZ++JtrguW9ODGBd+r0y1mXhIYPAw==" length="28305293" type="application/octet-stream"/>
+    </item>
+    <item>
       <title>2026.07.27.30cfe7e</title>
       <pubDate>Mon, 27 Jul 2026 18:01:59 +0000</pubDate>
       <sparkle:version>20260727.195947</sparkle:version>
