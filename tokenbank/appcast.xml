@@ -8,6 +8,25 @@
     <description>Updates for tokenbank (macOS).</description>
     <language>en</language>
     <item>
+      <title>2026.07.27.38dedcf</title>
+      <pubDate>Mon, 27 Jul 2026 10:45:01 +0000</pubDate>
+      <sparkle:version>20260727</sparkle:version>
+      <sparkle:shortVersionString>2026.07.27.38dedcf</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h3>Account management + live menu bar + reliability fixes</h3>
+<ul>
+  <li><b>Switch accounts in Settings → Accounts</b> — per-account usage, Promote, rename/delete inline.</li>
+  <li><b>Menu-bar readout (opt-in)</b> — active account's usage % and/or a countdown to the next refresh.</li>
+  <li><b>"Re-login needed" + Re-link</b> — expired logins are flagged and re-captured from a fresh <code>claude login</code>, no duplicate.</li>
+  <li><b>Token-billed accounts</b> read "No plan usage · token-billed"; extra-credits allowance now shows.</li>
+</ul>
+<p><b>Fixed:</b> sessions no longer drop (the heartbeat never refreshes your active login); each account shows its <i>own</i> usage; account switching reliably keeps the freshest token; OAuth tokens are never logged.</p>
+<p style="color:#888">Signed &amp; notarized. Requires macOS 14+ and Claude Code.</p>
+      ]]></description>
+      <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.07.27.38dedcf/Tokenbank-2026.07.27.38dedcf.dmg" sparkle:edSignature="TO3z1/5ij3O9v5Xwv2sgdkdU4sfTeCMlXfkCIR1vWfskJEl158ejA4Z+t64WhkdVd8qL+zlHPfy0wUaKRt0RCw==" length="28270464" type="application/octet-stream"/>
+    </item>
+    <item>
       <title>2026.07.25.a3f88b8</title>
       <description><![CDATA[
         <h3>Automatic updates are here</h3>
