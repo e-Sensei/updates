@@ -19,13 +19,15 @@
   <li><b>Switch accounts in Settings → Accounts</b> — per-account usage, Promote, rename/delete inline.</li>
   <li><b>Menu-bar readout (opt-in)</b> — active account's usage % and/or a countdown to the next refresh.</li>
   <li><b>"Re-login needed" + Re-link</b> — expired logins are flagged and re-captured from a fresh <code>claude login</code>, no duplicate.</li>
+  <li><b>Claude engine status</b> — Settings ▸ General shows the detected <code>claude</code> path + version (or why it won't run).</li>
   <li><b>Token-billed accounts</b> read "No plan usage · token-billed"; extra-credits allowance now shows.</li>
 </ul>
-<p><b>Diagnostics:</b> usage polling logs a clear "no Claude engine found" line instead of failing silently.</p>
-<p><b>Updates:</b> now checks hourly (was daily).</p>
+<p><b>Fixed — no more duplicated usage bars.</b> When a live <code>claude</code> session held the shared login, the usage probe could report <i>its</i> numbers for other accounts (two accounts showing identical bars). Those readings are now dropped — an account shows blank rather than someone else's usage.</p>
+<p><b>Fixed:</b> sessions no longer drop (the heartbeat never refreshes your active login); a dead-token account is marked "Re-login needed" instead of borrowing another's usage; account switching reliably keeps the freshest token; OAuth tokens are never logged.</p>
 <p><b>Fixed:</b> a false "app is behind the daemon" version-mismatch banner on fresh installs (thanks to <b>The Persian Prince</b> for the catch).</p>
-<p><b>Fixed:</b> sessions no longer drop (the heartbeat never refreshes your active login); each account shows its <i>own</i> usage; account switching reliably keeps the freshest token; OAuth tokens are never logged.</p>
-<p style="color:#888">Signed &amp; notarized. Requires macOS 14+ and Claude Code.</p>
+<p><b>Updates:</b> now checks hourly (was daily), and same-day releases are offered correctly.</p>
+<p><b>Diagnostics &amp; polish:</b> usage-poll failures log a clear reason instead of failing silently; usage rows align cleanly (fixed-width % and resets-in columns).</p>
+<p style="color:#888">Requires macOS 14+ and Claude Code.</p>
       ]]></description>
       <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.07.27.30cfe7e/Tokenbank-2026.07.27.30cfe7e.dmg" sparkle:edSignature="d+ZVAslccUlJHV84knKrDZ6NaGxfKKwMMHJzhyl/c7mC7LRey2vWwBqv7ztW7eMHgYA5FBAFjYYOpSbU80MxDg==" length="28299294" type="application/octet-stream"/>
     </item>
