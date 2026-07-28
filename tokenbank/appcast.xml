@@ -14,21 +14,10 @@
       <sparkle:shortVersionString>2026.07.28.00e7803</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<h3>Account management + live menu bar + reliability fixes</h3>
 <ul>
-  <li><b>Switch accounts in Settings → Accounts</b> — per-account usage, Promote, rename/delete inline.</li>
-  <li><b>Menu-bar readout (opt-in)</b> — active account's usage % and/or a countdown to the next refresh.</li>
-  <li><b>"Re-login needed" + Re-link</b> — expired logins are flagged and re-captured from a fresh <code>claude login</code>, no duplicate.</li>
-  <li><b>Claude engine status</b> — Settings ▸ General shows the detected <code>claude</code> path + version (or why it won't run).</li>
-  <li><b>Token-billed accounts</b> read "No plan usage · token-billed"; extra-credits allowance now shows.</li>
+  <li><b>Faster, more reliable usage.</b> Usage now reads each account's plan data directly and in parallel — noticeably quicker, and it can no longer be thrown off by a running Claude session (accounts no longer show each other's numbers).</li>
+  <li><b>Claude Code is no longer required just to see usage.</b> tokenbank still shows the detected <code>claude</code> engine in Settings, but polling works without it.</li>
 </ul>
-<p><b>Fixed — no more duplicated usage bars.</b> A running <code>claude</code> session holds the shared macOS login, so a background usage probe could report <i>its</i> numbers for other accounts (two accounts showing identical bars). tokenbank now detects a live session and <b>pauses</b> the background account polls — keeping last-known usage and showing “Paused · a Claude session is running” — instead of risking a wrong reading. The active account keeps refreshing, and normal polling resumes once no session is running.</p>
-<p><b>Fixed — stored logins can no longer be cross-contaminated.</b> A running session could previously cause one account's saved credential to be overwritten with another's during a poll (two accounts ending up on the same login). That capture is now skipped while a session is running, so each account keeps its own credential.</p>
-<p><b>Fixed:</b> sessions no longer drop (the heartbeat never refreshes your active login); a dead-token account is marked "Re-login needed" instead of borrowing another's usage; account switching reliably keeps the freshest token; OAuth tokens are never logged.</p>
-<p><b>Fixed:</b> a false "app is behind the daemon" version-mismatch banner on fresh installs (thanks to <b>The Persian Prince</b> for the catch).</p>
-<p><b>Updates:</b> now checks hourly (was daily), and same-day releases are offered correctly.</p>
-<p><b>Diagnostics &amp; polish:</b> usage-poll failures log a clear reason instead of failing silently; usage rows align cleanly (fixed-width % and resets-in columns).</p>
-<p style="color:#888">Requires macOS 14+ and Claude Code.</p>
       ]]></description>
       <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.07.28.00e7803/Tokenbank-2026.07.28.00e7803.dmg" sparkle:edSignature="0SBDWKylMt0FDr9usJHpU5cFqX6WZYL9gixamNeoX4VoHjDjAQeHg/k6aMQVNd5XVJuXYYPGQX/UJoGqEH7GBA==" length="27856257" type="application/octet-stream"/>
     </item>
@@ -39,21 +28,9 @@
       <sparkle:shortVersionString>2026.07.27.864f7a7</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<h3>Account management + live menu bar + reliability fixes</h3>
 <ul>
-  <li><b>Switch accounts in Settings → Accounts</b> — per-account usage, Promote, rename/delete inline.</li>
-  <li><b>Menu-bar readout (opt-in)</b> — active account's usage % and/or a countdown to the next refresh.</li>
-  <li><b>"Re-login needed" + Re-link</b> — expired logins are flagged and re-captured from a fresh <code>claude login</code>, no duplicate.</li>
-  <li><b>Claude engine status</b> — Settings ▸ General shows the detected <code>claude</code> path + version (or why it won't run).</li>
-  <li><b>Token-billed accounts</b> read "No plan usage · token-billed"; extra-credits allowance now shows.</li>
+  <li><b>Fixed — stored logins can no longer be cross-contaminated.</b> A running Claude session could previously cause one account's saved credential to be overwritten with another's during a usage poll (two accounts ending up on the same login). That capture is now skipped while a session is running.</li>
 </ul>
-<p><b>Fixed — no more duplicated usage bars.</b> A running <code>claude</code> session holds the shared macOS login, so a background usage probe could report <i>its</i> numbers for other accounts (two accounts showing identical bars). tokenbank now detects a live session and <b>pauses</b> the background account polls — keeping last-known usage and showing “Paused · a Claude session is running” — instead of risking a wrong reading. The active account keeps refreshing, and normal polling resumes once no session is running.</p>
-<p><b>Fixed — stored logins can no longer be cross-contaminated.</b> A running session could previously cause one account's saved credential to be overwritten with another's during a poll (two accounts ending up on the same login). That capture is now skipped while a session is running, so each account keeps its own credential.</p>
-<p><b>Fixed:</b> sessions no longer drop (the heartbeat never refreshes your active login); a dead-token account is marked "Re-login needed" instead of borrowing another's usage; account switching reliably keeps the freshest token; OAuth tokens are never logged.</p>
-<p><b>Fixed:</b> a false "app is behind the daemon" version-mismatch banner on fresh installs (thanks to <b>The Persian Prince</b> for the catch).</p>
-<p><b>Updates:</b> now checks hourly (was daily), and same-day releases are offered correctly.</p>
-<p><b>Diagnostics &amp; polish:</b> usage-poll failures log a clear reason instead of failing silently; usage rows align cleanly (fixed-width % and resets-in columns).</p>
-<p style="color:#888">Requires macOS 14+ and Claude Code.</p>
       ]]></description>
       <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.07.27.864f7a7/Tokenbank-2026.07.27.864f7a7.dmg" sparkle:edSignature="PnfBDoSBJX7Wdct63xNJBFxYcV8ZVe8gwdKTMXR3HOrE5tPnENamXxFuG3Co+CwNjFbaO36CVQctWOhNRG0eBw==" length="28305323" type="application/octet-stream"/>
     </item>
@@ -64,20 +41,9 @@
       <sparkle:shortVersionString>2026.07.27.d8fb537</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<h3>Account management + live menu bar + reliability fixes</h3>
 <ul>
-  <li><b>Switch accounts in Settings → Accounts</b> — per-account usage, Promote, rename/delete inline.</li>
-  <li><b>Menu-bar readout (opt-in)</b> — active account's usage % and/or a countdown to the next refresh.</li>
-  <li><b>"Re-login needed" + Re-link</b> — expired logins are flagged and re-captured from a fresh <code>claude login</code>, no duplicate.</li>
-  <li><b>Claude engine status</b> — Settings ▸ General shows the detected <code>claude</code> path + version (or why it won't run).</li>
-  <li><b>Token-billed accounts</b> read "No plan usage · token-billed"; extra-credits allowance now shows.</li>
+  <li><b>Fixed — no more duplicated usage bars.</b> When a Claude session is running, tokenbank pauses the background account polls (keeping last-known usage, marked "paused") instead of risking a wrong reading. The active account keeps refreshing, and normal polling resumes once no session is running.</li>
 </ul>
-<p><b>Fixed — no more duplicated usage bars.</b> A running <code>claude</code> session holds the shared macOS login, so a background usage probe could report <i>its</i> numbers for other accounts (two accounts showing identical bars). tokenbank now detects a live session and <b>pauses</b> the background account polls — keeping last-known usage and showing “Paused · a Claude session is running” — instead of risking a wrong reading. The active account keeps refreshing, and normal polling resumes once no session is running.</p>
-<p><b>Fixed:</b> sessions no longer drop (the heartbeat never refreshes your active login); a dead-token account is marked "Re-login needed" instead of borrowing another's usage; account switching reliably keeps the freshest token; OAuth tokens are never logged.</p>
-<p><b>Fixed:</b> a false "app is behind the daemon" version-mismatch banner on fresh installs (thanks to <b>The Persian Prince</b> for the catch).</p>
-<p><b>Updates:</b> now checks hourly (was daily), and same-day releases are offered correctly.</p>
-<p><b>Diagnostics &amp; polish:</b> usage-poll failures log a clear reason instead of failing silently; usage rows align cleanly (fixed-width % and resets-in columns).</p>
-<p style="color:#888">Requires macOS 14+ and Claude Code.</p>
       ]]></description>
       <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.07.27.d8fb537/Tokenbank-2026.07.27.d8fb537.dmg" sparkle:edSignature="H02oAlX2ZgdUfxzJDTj5ILohh6bogy7+j0VXYaIuDkRBQgCVIEqbuh7foPZ++JtrguW9ODGBd+r0y1mXhIYPAw==" length="28305293" type="application/octet-stream"/>
     </item>
@@ -88,20 +54,9 @@
       <sparkle:shortVersionString>2026.07.27.30cfe7e</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<h3>Account management + live menu bar + reliability fixes</h3>
 <ul>
-  <li><b>Switch accounts in Settings → Accounts</b> — per-account usage, Promote, rename/delete inline.</li>
-  <li><b>Menu-bar readout (opt-in)</b> — active account's usage % and/or a countdown to the next refresh.</li>
-  <li><b>"Re-login needed" + Re-link</b> — expired logins are flagged and re-captured from a fresh <code>claude login</code>, no duplicate.</li>
-  <li><b>Claude engine status</b> — Settings ▸ General shows the detected <code>claude</code> path + version (or why it won't run).</li>
-  <li><b>Token-billed accounts</b> read "No plan usage · token-billed"; extra-credits allowance now shows.</li>
+  <li>Usage rows line up cleanly — the <b>%</b> and <b>resets-in</b> columns are fixed-width, so nothing clips.</li>
 </ul>
-<p><b>Fixed — no more duplicated usage bars.</b> When a live <code>claude</code> session held the shared login, the usage probe could report <i>its</i> numbers for other accounts (two accounts showing identical bars). Those readings are now dropped — an account shows blank rather than someone else's usage.</p>
-<p><b>Fixed:</b> sessions no longer drop (the heartbeat never refreshes your active login); a dead-token account is marked "Re-login needed" instead of borrowing another's usage; account switching reliably keeps the freshest token; OAuth tokens are never logged.</p>
-<p><b>Fixed:</b> a false "app is behind the daemon" version-mismatch banner on fresh installs (thanks to <b>The Persian Prince</b> for the catch).</p>
-<p><b>Updates:</b> now checks hourly (was daily), and same-day releases are offered correctly.</p>
-<p><b>Diagnostics &amp; polish:</b> usage-poll failures log a clear reason instead of failing silently; usage rows align cleanly (fixed-width % and resets-in columns).</p>
-<p style="color:#888">Requires macOS 14+ and Claude Code.</p>
       ]]></description>
       <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.07.27.30cfe7e/Tokenbank-2026.07.27.30cfe7e.dmg" sparkle:edSignature="d+ZVAslccUlJHV84knKrDZ6NaGxfKKwMMHJzhyl/c7mC7LRey2vWwBqv7ztW7eMHgYA5FBAFjYYOpSbU80MxDg==" length="28299294" type="application/octet-stream"/>
     </item>
@@ -112,18 +67,9 @@
       <sparkle:shortVersionString>2026.07.27.a9f0d4a</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<h3>Account management + live menu bar + reliability fixes</h3>
 <ul>
-  <li><b>Switch accounts in Settings → Accounts</b> — per-account usage, Promote, rename/delete inline.</li>
-  <li><b>Menu-bar readout (opt-in)</b> — active account's usage % and/or a countdown to the next refresh.</li>
-  <li><b>"Re-login needed" + Re-link</b> — expired logins are flagged and re-captured from a fresh <code>claude login</code>, no duplicate.</li>
-  <li><b>Token-billed accounts</b> read "No plan usage · token-billed"; extra-credits allowance now shows.</li>
+  <li><b>New: Claude engine status.</b> Settings ▸ General shows the detected <code>claude</code> path and version (or why it won't run) — so you can see at a glance whether usage can be polled.</li>
 </ul>
-<p><b>Diagnostics:</b> usage polling logs a clear "no Claude engine found" line instead of failing silently.</p>
-<p><b>Updates:</b> now checks hourly (was daily).</p>
-<p><b>Fixed:</b> a false "app is behind the daemon" version-mismatch banner on fresh installs (thanks to <b>The Persian Prince</b> for the catch).</p>
-<p><b>Fixed:</b> sessions no longer drop (the heartbeat never refreshes your active login); each account shows its <i>own</i> usage; account switching reliably keeps the freshest token; OAuth tokens are never logged.</p>
-<p style="color:#888">Signed &amp; notarized. Requires macOS 14+ and Claude Code.</p>
       ]]></description>
       <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.07.27.a9f0d4a/Tokenbank-2026.07.27.a9f0d4a.dmg" sparkle:edSignature="d3QVnrb8TvQmfmDPqR8gRUPIE20w/KWvoP1CYdH3YDMhu07o9ZUTgdL3KI3ccUZrMcALRNskdzQA9ZjJRvCCDw==" length="28299183" type="application/octet-stream"/>
     </item>
@@ -134,18 +80,9 @@
       <sparkle:shortVersionString>2026.07.27.b03df52</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<h3>Account management + live menu bar + reliability fixes</h3>
 <ul>
-  <li><b>Switch accounts in Settings → Accounts</b> — per-account usage, Promote, rename/delete inline.</li>
-  <li><b>Menu-bar readout (opt-in)</b> — active account's usage % and/or a countdown to the next refresh.</li>
-  <li><b>"Re-login needed" + Re-link</b> — expired logins are flagged and re-captured from a fresh <code>claude login</code>, no duplicate.</li>
-  <li><b>Token-billed accounts</b> read "No plan usage · token-billed"; extra-credits allowance now shows.</li>
+  <li><b>Fixed</b> — the background service could fail to restart after an in-app update ("could not find service"). Restart now recovers it reliably.</li>
 </ul>
-<p><b>Diagnostics:</b> usage polling logs a clear "no Claude engine found" line instead of failing silently.</p>
-<p><b>Updates:</b> now checks hourly (was daily).</p>
-<p><b>Fixed:</b> a false "app is behind the daemon" version-mismatch banner on fresh installs (thanks to <b>The Persian Prince</b> for the catch).</p>
-<p><b>Fixed:</b> sessions no longer drop (the heartbeat never refreshes your active login); each account shows its <i>own</i> usage; account switching reliably keeps the freshest token; OAuth tokens are never logged.</p>
-<p style="color:#888">Signed &amp; notarized. Requires macOS 14+ and Claude Code.</p>
       ]]></description>
       <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.07.27.b03df52/Tokenbank-2026.07.27.b03df52.dmg" sparkle:edSignature="vZ6huW8CJV9JzgWu/j01CE+N/v3GkHxgNvb2EGLv7labkhRMBfi7SEVlAj0TfCXy9PaEnzjGVQmOabjnpMNWDA==" length="28290027" type="application/octet-stream"/>
     </item>
@@ -156,18 +93,9 @@
       <sparkle:shortVersionString>2026.07.27.f539f2f</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<h3>Account management + live menu bar + reliability fixes</h3>
 <ul>
-  <li><b>Switch accounts in Settings → Accounts</b> — per-account usage, Promote, rename/delete inline.</li>
-  <li><b>Menu-bar readout (opt-in)</b> — active account's usage % and/or a countdown to the next refresh.</li>
-  <li><b>"Re-login needed" + Re-link</b> — expired logins are flagged and re-captured from a fresh <code>claude login</code>, no duplicate.</li>
-  <li><b>Token-billed accounts</b> read "No plan usage · token-billed"; extra-credits allowance now shows.</li>
+  <li><b>Checks for updates hourly</b> (was once a day), so fixes reach you sooner.</li>
 </ul>
-<p><b>Diagnostics:</b> usage polling logs a clear "no Claude engine found" line instead of failing silently.</p>
-<p><b>Updates:</b> now checks hourly (was daily).</p>
-<p><b>Fixed:</b> a false "app is behind the daemon" version-mismatch banner on fresh installs (thanks to <b>The Persian Prince</b> for the catch).</p>
-<p><b>Fixed:</b> sessions no longer drop (the heartbeat never refreshes your active login); each account shows its <i>own</i> usage; account switching reliably keeps the freshest token; OAuth tokens are never logged.</p>
-<p style="color:#888">Signed &amp; notarized. Requires macOS 14+ and Claude Code.</p>
       ]]></description>
       <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.07.27.f539f2f/Tokenbank-2026.07.27.f539f2f.dmg" sparkle:edSignature="yvv3G4z+cpiF87O+yEGkk0mve8ja0C35sU1FeSBg2Ltt/tS3QniQ2xf5He4JdfseU9LO+qZYzD0XADL6dVZmDQ==" length="28290554" type="application/octet-stream"/>
     </item>
@@ -178,17 +106,9 @@
       <sparkle:shortVersionString>2026.07.27.253ab8e</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<h3>Account management + live menu bar + reliability fixes</h3>
 <ul>
-  <li><b>Switch accounts in Settings → Accounts</b> — per-account usage, Promote, rename/delete inline.</li>
-  <li><b>Menu-bar readout (opt-in)</b> — active account's usage % and/or a countdown to the next refresh.</li>
-  <li><b>"Re-login needed" + Re-link</b> — expired logins are flagged and re-captured from a fresh <code>claude login</code>, no duplicate.</li>
-  <li><b>Token-billed accounts</b> read "No plan usage · token-billed"; extra-credits allowance now shows.</li>
+  <li><b>Fixed</b> — usage-poll failures now log a clear reason instead of failing silently (Settings ▸ Log).</li>
 </ul>
-<p><b>Diagnostics:</b> usage polling logs a clear "no Claude engine found" line instead of failing silently.</p>
-<p><b>Fixed:</b> a false "app is behind the daemon" version-mismatch banner on fresh installs (thanks to <b>The Persian Prince</b> for the catch).</p>
-<p><b>Fixed:</b> sessions no longer drop (the heartbeat never refreshes your active login); each account shows its <i>own</i> usage; account switching reliably keeps the freshest token; OAuth tokens are never logged.</p>
-<p style="color:#888">Signed &amp; notarized. Requires macOS 14+ and Claude Code.</p>
       ]]></description>
       <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.07.27.253ab8e/Tokenbank-2026.07.27.253ab8e.dmg" sparkle:edSignature="66HdHOcKfZbtZShvr06Ihv1PHyl3X6Elb3Fv4UX4b5QBG34pcMD/ATJj39lwxY0K+GChxiYFG+zsW2vzjUVyCQ==" length="28290650" type="application/octet-stream"/>
     </item>
@@ -199,17 +119,9 @@
       <sparkle:shortVersionString>2026.07.27.9afd555</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<h3>Account management + live menu bar + reliability fixes</h3>
 <ul>
-  <li><b>Switch accounts in Settings → Accounts</b> — per-account usage, Promote, rename/delete inline.</li>
-  <li><b>Menu-bar readout (opt-in)</b> — active account's usage % and/or a countdown to the next refresh.</li>
-  <li><b>"Re-login needed" + Re-link</b> — expired logins are flagged and re-captured from a fresh <code>claude login</code>, no duplicate.</li>
-  <li><b>Token-billed accounts</b> read "No plan usage · token-billed"; extra-credits allowance now shows.</li>
+  <li><b>Fixed</b> — auto-update now offers same-day releases (the version comparison was date-only, so a second release on the same day was skipped).</li>
 </ul>
-<p><b>Diagnostics:</b> usage polling logs a clear "no Claude engine found" line instead of failing silently.</p>
-<p><b>Fixed:</b> a false "app is behind the daemon" version-mismatch banner on fresh installs (thanks to <b>The Persian Prince</b> for the catch).</p>
-<p><b>Fixed:</b> sessions no longer drop (the heartbeat never refreshes your active login); each account shows its <i>own</i> usage; account switching reliably keeps the freshest token; OAuth tokens are never logged.</p>
-<p style="color:#888">Signed &amp; notarized. Requires macOS 14+ and Claude Code.</p>
       ]]></description>
       <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.07.27.9afd555/Tokenbank-2026.07.27.9afd555.dmg" sparkle:edSignature="qc7JgEKFooHONE9xADEHTa0/JYcFmlbLbxomCtNtb1UkIYMlO3W39PiXbVSB0gnIt8dPNutxBRNikzTger8GCA==" length="28270572" type="application/octet-stream"/>
     </item>
@@ -220,17 +132,9 @@
       <sparkle:shortVersionString>2026.07.27.71fafa8</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<h3>Account management + live menu bar + reliability fixes</h3>
 <ul>
-  <li><b>Switch accounts in Settings → Accounts</b> — per-account usage, Promote, rename/delete inline.</li>
-  <li><b>Menu-bar readout (opt-in)</b> — active account's usage % and/or a countdown to the next refresh.</li>
-  <li><b>"Re-login needed" + Re-link</b> — expired logins are flagged and re-captured from a fresh <code>claude login</code>, no duplicate.</li>
-  <li><b>Token-billed accounts</b> read "No plan usage · token-billed"; extra-credits allowance now shows.</li>
+  <li><b>Fixed</b> — usage now logs a clear "no Claude engine found" line instead of a silent failure.</li>
 </ul>
-<p><b>Diagnostics:</b> usage polling logs a clear "no Claude engine found" line instead of failing silently.</p>
-<p><b>Fixed:</b> a false "app is behind the daemon" version-mismatch banner on fresh installs (thanks to <b>The Persian Prince</b> for the catch).</p>
-<p><b>Fixed:</b> sessions no longer drop (the heartbeat never refreshes your active login); each account shows its <i>own</i> usage; account switching reliably keeps the freshest token; OAuth tokens are never logged.</p>
-<p style="color:#888">Signed &amp; notarized. Requires macOS 14+ and Claude Code.</p>
       ]]></description>
       <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.07.27.71fafa8/Tokenbank-2026.07.27.71fafa8.dmg" sparkle:edSignature="7ZkYCo7jVkMsu7MptL0piBlwQ5Ho7anHShX22NJwLwN5Hq/dwxg8fKV9mTm0KuHsNLCHpspX5WrEaOJ9SJeRBw==" length="28270520" type="application/octet-stream"/>
     </item>
@@ -241,28 +145,19 @@
       <sparkle:shortVersionString>2026.07.27.38dedcf</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<h3>Account management + live menu bar + reliability fixes</h3>
 <ul>
-  <li><b>Switch accounts in Settings → Accounts</b> — per-account usage, Promote, rename/delete inline.</li>
-  <li><b>Menu-bar readout (opt-in)</b> — active account's usage % and/or a countdown to the next refresh.</li>
-  <li><b>"Re-login needed" + Re-link</b> — expired logins are flagged and re-captured from a fresh <code>claude login</code>, no duplicate.</li>
-  <li><b>Token-billed accounts</b> read "No plan usage · token-billed"; extra-credits allowance now shows.</li>
+  <li>Clearer separators between accounts.</li>
+  <li>The Log tab jumps to the newest entry and has an always-visible scrollbar.</li>
 </ul>
-<p><b>Fixed:</b> sessions no longer drop (the heartbeat never refreshes your active login); each account shows its <i>own</i> usage; account switching reliably keeps the freshest token; OAuth tokens are never logged.</p>
-<p style="color:#888">Signed &amp; notarized. Requires macOS 14+ and Claude Code.</p>
       ]]></description>
       <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.07.27.38dedcf/Tokenbank-2026.07.27.38dedcf.dmg" sparkle:edSignature="TO3z1/5ij3O9v5Xwv2sgdkdU4sfTeCMlXfkCIR1vWfskJEl158ejA4Z+t64WhkdVd8qL+zlHPfy0wUaKRt0RCw==" length="28270464" type="application/octet-stream"/>
     </item>
     <item>
       <title>2026.07.25.a3f88b8</title>
       <description><![CDATA[
-        <h3>Automatic updates are here</h3>
-        <p>First release with built-in updates &mdash; tokenbank now updates itself in place.</p>
-        <ul>
-          <li><b>New:</b> Automatic updates (Sparkle). Background checks and one-click install, cryptographically signed. Manual check in Settings &rarr; General &rarr; Check Now.</li>
-          <li><b>Fixed:</b> Settings window (General / Accounts / Log) no longer opens cramped or clipped, sizes correctly, and shows a proper title.</li>
-        </ul>
-        <p style="color:#888">Signed (Developer ID: Archaitect B.V.) and notarized. Requires macOS 14+ and Claude Code.</p>
+<ul>
+  <li>Initial public builds: bank multiple Claude logins, switch the active account, and see per-account plan usage (5-hour / 7-day / per-model) in the menu bar. Import your current <code>claude login</code>, promote any account to active, rename or delete — all from Settings. Auto-updates via Sparkle. Requires macOS 14+.</li>
+</ul>
       ]]></description>
       <pubDate>Sat, 25 Jul 2026 00:21:29 +0000</pubDate>
       <sparkle:version>20260725</sparkle:version>
