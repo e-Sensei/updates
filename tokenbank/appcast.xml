@@ -175,6 +175,7 @@
       <description><![CDATA[
 <ul>
   <li><b>Fixed</b> — usage now logs a clear "no Claude engine found" line instead of a silent failure.</li>
+  <li><b>Fixed</b> — no more false "app is behind the daemon" update banner (the app's protocol mirror had lagged the daemon). Spotted by The Persian Prince.</li>
 </ul>
       ]]></description>
       <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.07.27.71fafa8/Tokenbank-2026.07.27.71fafa8.dmg" sparkle:edSignature="7ZkYCo7jVkMsu7MptL0piBlwQ5Ho7anHShX22NJwLwN5Hq/dwxg8fKV9mTm0KuHsNLCHpspX5WrEaOJ9SJeRBw==" length="28270520" type="application/octet-stream"/>
