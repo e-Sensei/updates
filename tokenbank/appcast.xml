@@ -8,6 +8,21 @@
     <description>Updates for tokenbank (macOS).</description>
     <language>en</language>
     <item>
+      <title>2026.07.28.90531f5</title>
+      <pubDate>Tue, 28 Jul 2026 19:29:53 +0000</pubDate>
+      <sparkle:version>20260728.212801</sparkle:version>
+      <sparkle:shortVersionString>2026.07.28.90531f5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+  <li><b>Fixed — the same login in two organizations no longer mixes up its usage.</b> If you imported an account under two organizations (same email, different org), tokenbank could show one org's numbers for the other and even overwrite the saved login. It now tells them apart by organization, so each shows — and keeps — its own. Spotted by The Antwerper Duke.</li>
+  <li><b>Accounts show their organization.</b> Each row now lists the organization under the email, so two logins that share an email are easy to tell apart at a glance.</li>
+  <li><b>Lighter background helper.</b> tokenbank's daemon is now a native binary — less memory, same features. Nothing to do; it updates in place.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.07.28.90531f5/Tokenbank-2026.07.28.90531f5.dmg" sparkle:edSignature="EqJaIYgQbobJKpq23Xag4al58Ucg+Imw+hJW0hdPA4IX6dI4WI42Jnb6VJmBleMv4G33JsNBaIPfH2tk6mA1Bw==" length="2551494" type="application/octet-stream"/>
+    </item>
+    <item>
       <title>2026.07.28.f53546e</title>
       <pubDate>Tue, 28 Jul 2026 08:54:01 +0000</pubDate>
       <sparkle:version>20260728.105011</sparkle:version>
