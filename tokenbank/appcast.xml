@@ -8,6 +8,21 @@
     <description>Updates for tokenbank (macOS).</description>
     <language>en</language>
     <item>
+      <title>2026.08.03.8892ee3</title>
+      <pubDate>Mon, 03 Aug 2026 09:02:28 +0000</pubDate>
+      <sparkle:version>20260803.110031</sparkle:version>
+      <sparkle:shortVersionString>2026.08.03.8892ee3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+  <li><b>New — automatic updates, if you want them.</b> Settings ▸ Maintenance has an "Install updates automatically" toggle: turn it on and tokenbank downloads and installs updates in the background; off (the default) it asks you first.</li>
+  <li><b>The menu-bar % tracks your 5-hour window.</b> It now shows the 5-hour usage — the limit you'll hit first — instead of whichever window happened to be highest.</li>
+  <li><b>Settings tidied</b> — the Claude engine status (version/path) moved to the Diagnostics tab, alongside the connection and daemon health.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.08.03.8892ee3/Tokenbank-2026.08.03.8892ee3.dmg" sparkle:edSignature="Gn9tU+MpltZsAjpOf3xHjDqc2jE16mG4TZqh4kSrCcAdREU3LY6iJQTBigS1zP66BmzixwwzdNNvSfyOuuUWAA==" length="2553249" type="application/octet-stream"/>
+    </item>
+    <item>
       <title>2026.07.28.90531f5</title>
       <pubDate>Tue, 28 Jul 2026 19:29:53 +0000</pubDate>
       <sparkle:version>20260728.212801</sparkle:version>
