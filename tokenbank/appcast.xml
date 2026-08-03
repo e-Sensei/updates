@@ -8,6 +8,19 @@
     <description>Updates for tokenbank (macOS).</description>
     <language>en</language>
     <item>
+      <title>2026.08.03.493ea3c</title>
+      <pubDate>Mon, 03 Aug 2026 20:29:56 +0000</pubDate>
+      <sparkle:version>20260803.222757</sparkle:version>
+      <sparkle:shortVersionString>2026.08.03.493ea3c</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+  <li><b>Fixed — the menu bar no longer gets stuck on "not running" after sleep.</b> Waking your Mac (opening the lid after a commute) could leave tokenbank showing the daemon as down even though it was running fine. It now reconnects the moment you wake.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.08.03.493ea3c/Tokenbank-2026.08.03.493ea3c.dmg" sparkle:edSignature="8taaRiwtJ0IV7XvhWzd5Toh065fP5FOk3Y3yBzVWF5PaFeRt/5il4XGmzqLZvC+g8XMYF3K6bgwMvyLQ+saFBA==" length="2554386" type="application/octet-stream"/>
+    </item>
+    <item>
       <title>2026.08.03.8892ee3</title>
       <pubDate>Mon, 03 Aug 2026 09:02:28 +0000</pubDate>
       <sparkle:version>20260803.110031</sparkle:version>
