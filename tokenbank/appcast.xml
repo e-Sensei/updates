@@ -8,6 +8,19 @@
     <description>Updates for tokenbank (macOS).</description>
     <language>en</language>
     <item>
+      <title>2026.08.03.721176a</title>
+      <pubDate>Mon, 03 Aug 2026 20:57:54 +0000</pubDate>
+      <sparkle:version>20260803.225551</sparkle:version>
+      <sparkle:shortVersionString>2026.08.03.721176a</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+  <li><b>Fixed — the background service could crash-loop and get stuck on "not running".</b> If one of your logins needed re-login, a status line the service wrote to its log at startup could crash it the instant it launched — so the menu bar showed "not running" even though nothing else was wrong, and it couldn't recover on its own. Fixed at the root; the service now stays up and simply notes the failing account.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.08.03.721176a/Tokenbank-2026.08.03.721176a.dmg" sparkle:edSignature="ZMzZKJatnRvc10L0zahUNFtvOvhJLRdWlXvficVu77aNHnGV3cpJ60ehOLAZvmY7SjBsD6UOIAm8tonzYYEvBA==" length="2554763" type="application/octet-stream"/>
+    </item>
+    <item>
       <title>2026.08.03.493ea3c</title>
       <pubDate>Mon, 03 Aug 2026 20:29:56 +0000</pubDate>
       <sparkle:version>20260803.222757</sparkle:version>
