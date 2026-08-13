@@ -8,6 +8,20 @@
     <description>Updates for tokenbank (macOS).</description>
     <language>en</language>
     <item>
+      <title>2026.08.13.597a127</title>
+      <pubDate>Thu, 13 Aug 2026 14:16:45 +0000</pubDate>
+      <sparkle:version>20260813.161407</sparkle:version>
+      <sparkle:shortVersionString>2026.08.13.597a127</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+  <li><b>A maxed-out window now tells you when it frees up.</b> A usage row at 100% used to read "maxed" where every other row shows a countdown — but the red bar and the red "100%" already say it's maxed, and the one thing you actually want at that point is when you can work again. Every row now shows "resets in 3h 12m". Suggested by The Antwerper Duke.</li>
+  <li><b>Fixed — a reset time that has just passed no longer reads "resets in expired".</b> It now says "resetting…" until the next poll picks up the new window.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.08.13.597a127/Tokenbank-2026.08.13.597a127.dmg" sparkle:edSignature="+DFLWwkrlW7NlUmjdrGuYIfry9rQhBaoDRgFKZG9ypVK7LHmzYdkdI6xvowS6/H2StL6a6T0fY1N7XiJQSqnAA==" length="2575494" type="application/octet-stream"/>
+    </item>
+    <item>
       <title>2026.08.04.d513aad</title>
       <pubDate>Tue, 04 Aug 2026 19:52:07 +0000</pubDate>
       <sparkle:version>20260804.215023</sparkle:version>
