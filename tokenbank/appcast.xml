@@ -8,6 +8,21 @@
     <description>Updates for tokenbank (macOS).</description>
     <language>en</language>
     <item>
+      <title>2026.08.28.5a55651</title>
+      <pubDate>Fri, 28 Aug 2026 09:29:27 +0000</pubDate>
+      <sparkle:version>20260828.112645</sparkle:version>
+      <sparkle:shortVersionString>2026.08.28.5a55651</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+  <li><b>The gateway is here.</b> tokenbank can now run as a local gateway for Claude Code and other Anthropic clients: point them at it and it spreads your work across the logins you've chosen to pool, so no single account's 5-hour or weekly limit is the thing that stops you. Turn it on in the <b>Gateway</b> tab — <b>"Configure this Mac"</b> wires up the environment for you, and un-wires it again in one click.</li>
+  <li><b>You can see exactly where your work is going.</b> A new <b>Sessions</b> tab shows which account served which conversation; the menu-bar percentage now tracks the pool — the accounts that actually serve traffic — instead of the one login the gateway never routes to; and every response is recorded per account and per client in the ledger, priced as it's read.</li>
+  <li><b>Safe by design.</b> Each account keeps part of its 5-hour window and its credits in reserve, so a background agent can't spend you out of your own session; the 1-hour prompt-cache discount is kept intact end to end; a provider overload no longer burns through every consented account looking for room; and a rejected request names the real Anthropic account instead of an anonymous slot.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.08.28.5a55651/Tokenbank-2026.08.28.5a55651.dmg" sparkle:edSignature="259Dahvh2Q0oF0AajM+iM+p90f3RvnZpS5+vxW99ZPFOCSb8PxAafN5WsJRaf0+092mDB4dalHniUB/9+OISBg==" length="3059906" type="application/octet-stream"/>
+    </item>
+    <item>
       <title>2026.08.13.597a127</title>
       <pubDate>Thu, 13 Aug 2026 14:16:45 +0000</pubDate>
       <sparkle:version>20260813.161407</sparkle:version>
