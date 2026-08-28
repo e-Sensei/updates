@@ -8,6 +8,21 @@
     <description>Updates for tokenbank (macOS).</description>
     <language>en</language>
     <item>
+      <title>2026.08.28.fa09683</title>
+      <pubDate>Fri, 28 Aug 2026 21:10:32 +0000</pubDate>
+      <sparkle:version>20260828.230814</sparkle:version>
+      <sparkle:shortVersionString>2026.08.28.fa09683</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+  <li><b>Fixed — the Sessions tab now loads.</b> Once the gateway had recorded more than a handful of sessions, its reply outgrew the control channel's send buffer and was silently cut off, so the tab sat on "Loading sessions…" forever. Replies of any size now arrive intact — and while a load is still in flight the tab says so, instead of misreporting the service as too old to report sessions.</li>
+  <li><b>Fixed — "Refresh usage now" no longer sticks greyed out.</b> If the background service was updated or restarted in the middle of a refresh, the button could latch disabled for the rest of the session. It now re-reads the real state on every refresh and recovers on its own.</li>
+  <li><b>Fixed — the background service reloads more reliably.</b> Reinstalling or reloading the launch agent could fail with a transient "Bootstrap failed: 5" because macOS tears the old job down asynchronously; tokenbank now waits for the old job to clear before starting the new one.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/e-Sensei/tokenbank/releases/download/v2026.08.28.fa09683/Tokenbank-2026.08.28.fa09683.dmg" sparkle:edSignature="ZZWE4dRhEs4VEYYaSC0uJovf714DIScfMsLbJKTZ4hsmbcGj6KQWLnHp/0au378VCqnSoFEOvZoq72armxILBQ==" length="3066518" type="application/octet-stream"/>
+    </item>
+    <item>
       <title>2026.08.28.5a55651</title>
       <pubDate>Fri, 28 Aug 2026 09:29:27 +0000</pubDate>
       <sparkle:version>20260828.112645</sparkle:version>
